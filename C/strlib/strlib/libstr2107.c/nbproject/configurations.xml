@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>stringH.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>address_of.c</itemPath>
+      <itemPath>begins_with_ignore_case.c</itemPath>
+      <itemPath>belongs.c</itemPath>
+      <itemPath>center.c</itemPath>
+      <itemPath>distinct.c</itemPath>
+      <itemPath>drop_left.c</itemPath>
+      <itemPath>drop_right.c</itemPath>
+      <itemPath>ellipsize.c</itemPath>
+      <itemPath>ends_with_ignore_case.c</itemPath>
+      <itemPath>findlength.c</itemPath>
+      <itemPath>index_of.c</itemPath>
+      <itemPath>intersect.c</itemPath>
+      <itemPath>is_blank.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>make_space.c</itemPath>
+      <itemPath>remove_chars.c</itemPath>
+      <itemPath>repeat.c</itemPath>
+      <itemPath>strcmp_ign_case.c</itemPath>
+      <itemPath>strcopy.c</itemPath>
+      <itemPath>wordcount.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>find_length</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>find_length</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="address_of.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="begins_with_ignore_case.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="belongs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="center.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="distinct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drop_left.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drop_right.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ellipsize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ends_with_ignore_case.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="findlength.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="index_of.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="intersect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="is_blank.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="make_space.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="remove_chars.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="repeat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="strcmp_ign_case.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="strcopy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stringH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wordcount.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="address_of.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="begins_with_ignore_case.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="belongs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="center.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="distinct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drop_left.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="drop_right.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ellipsize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ends_with_ignore_case.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="findlength.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="index_of.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="intersect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="is_blank.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="make_space.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="remove_chars.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="repeat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="strcmp_ign_case.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="strcopy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stringH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wordcount.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
