@@ -1,0 +1,11 @@
+README
+setup.cfg
+setup.py
+gzipstream/__init__.py
+gzipstream/gzipstreamfile.py
+gzipstream.egg-info/PKG-INFO
+gzipstream.egg-info/SOURCES.txt
+gzipstream.egg-info/dependency_links.txt
+gzipstream.egg-info/top_level.txt
+gzipstream/tests/__init__.py
+gzipstream/tests/test_gzipstreamfile.py
