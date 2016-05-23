@@ -32,7 +32,6 @@ def generalPlanets(authDict, planets = '*', data = 'general'):
                 'planet':planets,'data':data,'failsafe':'123456'}
     r = requests.get('http://hyp2.hyperiums.com/servlet/HAPI?', 
                      params = paramDict)
-    print r.headers
     return r.content
     
 def parsePlanetList(rawPlanets):
@@ -48,7 +47,6 @@ def parsePlanetList(rawPlanets):
     #Append a new dictionary to the array by splitting on delimiters
     for i in rawList:
         planetArray.append(dict(item.split('=') for item in (i.split('&'))))
-
     return planetArray
 
 
@@ -67,17 +65,33 @@ def aggIncome(pList, WTR = 0.25):
             if k.startswith('capacity'):
                 exploits = int(v)
         tradeRev = reduce(lambda x,y:x+y,planetInc)
-        planetNetInc = (tradeRev*exploits-upkeep)*(1-WTR)
+        planetNetInc = (tradeRev*exploits-upkeep-tradeRev*exploits*WTR)
         print i[str(n)] + ' ' +str(planetNetInc)
         TI += planetNetInc
         n += 1
     return TI
 
+def authRequest(authDict, additionalDict):
+    paramDict = {'gameid':authDict['gameid'],'playerid':authDict['playerid'],
+                'authkey':authDict['authkey']}
+                
+    paramDict.update(additionalDict)
+    r = requests.get('http://hyp2.hyperiums.com/servlet/HAPI?', 
+                     params = paramDict)
+    return r.content
+
 #hyp2.hyperiums.com/servlet/HAPI
-authParam = {'game':'Hyperiums7', 'player':'SwaggyP',
-             'hapikey':'TfiC54XdgTBv1apSw2H4'}
-             
-authDict = initAuth(authParam)
-resp = generalPlanets(authDict,data = 'trading')
-PL = parsePlanetList(resp)
-income = aggIncome(PL,WTR=.3)
+
+if 'name' == '__main__':
+    authParam = {'game':'Hyperiums7', 'player':'',
+                 'hapikey':'JCuWk6'}
+                 
+    authDict = initAuth(authParam)
+    resp = generalPlanets(authDict,data = 'trading')
+    PL = parsePlanetList(resp)
+    for i in PL:
+        print i
+    addDict = {'request':'getplayerinfo','failsafe':'',
+               'targetplayer':'Loy'}
+    authRequest(authDict,addDict)
+#income = aggIncome(PL,WTR=.3)
