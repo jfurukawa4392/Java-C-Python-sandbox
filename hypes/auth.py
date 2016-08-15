@@ -72,6 +72,16 @@ def aggIncome(pList, WTR = 0.25):
     return TI
 
 def authRequest(authDict, additionalDict):
+    """Uses initial authDict dictionary to make authenticated requests 
+    to HAPI
+    
+    ?gameid=[gameid]&playerid=[playerid]&authkey=[authkey]&[THE REQUEST]
+    where [THE REQUEST] respects one of the following syntaxes:
+    
+    - request=getplanetinfo&planet={[planetname]|*}&data={trading|infiltr|general}
+    => data=trading => infos on trading relations of controlled planet(s)
+    => data=infiltr => infos on infiltrations from controlled planet(s)
+    => data=general => general infos on any planet (including non-controlled ones)"""
     paramDict = {'gameid':authDict['gameid'],'playerid':authDict['playerid'],
                 'authkey':authDict['authkey']}
                 
